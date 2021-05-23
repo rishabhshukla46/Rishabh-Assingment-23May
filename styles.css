@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .main-container{
     display: flex;
@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px 40px;
+    padding: 20px 0px;
 }
 .header{
     display: flex;
@@ -36,8 +36,8 @@ body{
     text-shadow: .4px .4px #5eb850;
 }
 .header-option.login{
-    border: 1px solid #5eb850;
-    padding : 8px 20px;
+    border: 2px solid #5eb850;
+    padding : 10px 25px;
 }
 .header-option.register{
     text-decoration: underline;
@@ -52,7 +52,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    left : 43%;
+    left : 42%;
+}
+.header-logo img{
+    width: 170px
 }
 .logo-heading{
     font-size: 30px;
@@ -81,21 +84,86 @@ body{
 }
 .banner-overlay{
     position: absolute;
-    left: 16%;
+    left: 12%;
     top: 13%;
     width: 200px;
 }
 .banner-preheading{
+    color : #212529;
     font-size: 20px;
-    font-weight: 100;
-    padding: 9px 0px;
+    font-weight: 800;
+    text-shadow: .4px .4px #212529;
+    padding: 10px 0px;
     font-weight: 100;
 }
 .banner-heading{
     font-size: 40px;
     font-weight: 800;
     color: whitesmoke;
+    padding-bottom: 20px;
 }
+.fas.fa-search{
+    opacity: .7;
+}
+.input-date{
+    font-size: 10px;
+    opacity: .7;
+}
+.banner-searchBar{
+    background-color: white;
+    width: 700px;
+    display: flex;
+}
+.input-label{
+    font-size: 10px;
+    color: #5eb850;
+    text-shadow: .4px .4px #5eb850;
+}
+.search-element{
+    width: 33%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid black;
+}
+.search-element:hover{
+    cursor: pointer;
+}
+.search-element input{
+    border: none;
+    border-bottom: 1px solid black;
+    opacity: 0.5;
+    padding: 0;
+    margin: 0;
+}
+.search-element input:active{
+    border : none;
+}
+.input-bar{
+    padding: 10px;
+}
+.search-element.main-search{
+    font-size: 30px;
+    color: white;
+    width: 100px;
+    background-color: black;
+
+}
+.header-stamp{
+    text-align: center;
+    color: #5eb850;
+    border: 1px solid #5eb850;
+    border-radius: 50%;
+    width: 80px;
+    padding: 10px;
+    position: absolute;
+    left: 12%;
+    top: 5%;
+    font-size: 10px;
+    font-weight: 300;
+    transform: rotate(-30deg);
+}
+
 .what-we-do{
     width: 100%;
     display: flex;
@@ -115,7 +183,8 @@ body{
 .project-subheadline{
     color : #212529;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 200;
+    text-shadow: .4px .4px #212529;
     padding: 10px 0px 30px 0px;
 }
 .project-location{
@@ -172,6 +241,26 @@ body{
     background-size: contain; 
     width: 100%;
     height: 25vh;
+    position: relative;
+}
+.location-footer-content{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.olive-features{
+    width: 20%;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0px;
+}
+.feature-heading{
+    font-size: 30px;
+    font-weight: 800;
+}
+.feature-detail{
+    color: #242423;
+    font-size: 18px;
 }
 .why-olive{
     width: 100%;
@@ -202,6 +291,8 @@ body{
     width: 85%;
     text-align: center;
     padding: 20px 0px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .let-us-delight-you{
@@ -253,6 +344,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
 }
 .delight-features.overlay{
     position: absolute;
@@ -263,6 +355,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
 }
 
 .delight-features h4{
@@ -288,29 +381,32 @@ body{
     justify-content: center;
 }
 .blog-post{
-    width: 30%;   
+    width: 25%;   
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 0px 20px;
 }
 .blog-post img{
-    width : 80%;
+    width : 100%;
 }
 .blog-tag{
     background-color: white;
-    width: 81%;
+    width: 100%;
     padding: 20px 40px;
     text-shadow:.4px .4px grey;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
 }
 .read-now{
     background-color: white;
-    width: 81%;
+    width: 100%;
     font-size: 10px;
-    padding: 0px 40px 30px 40px;
+    padding: 10px 40px 30px 5px;
     text-shadow:.4px .4px grey;
     color: #5eb850;
     text-shadow: .4px .4px #5eb850;
+    
 }
 .testimonials{
     width: 100%;
@@ -319,6 +415,7 @@ body{
     align-items: center;
     background-color: whitesmoke;
     padding: 20px 150px;
+    position: relative;
 }
 .feedback{
     width: 100%;
@@ -328,7 +425,36 @@ body{
 }
 .comment{
     width: 50%;
+    color: whitesmoke;
+    font-size: 12px;
+    padding: 100px 100px 100px 50px;
     background-color: #161a1d;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.commenter-name{
+    font-size: 20px;
+    font-weight: 800;
+}
+.testimonial-stamp{
+    text-align: center;
+    color: #5eb850;
+    border: 1px solid #5eb850;
+    border-radius: 50%;
+    width: 80px;
+    padding: 10px;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    font-size: 10px;
+    font-weight: 300;
+    transform: rotate(-30deg);
+}
+.commenter-place{
+    font-size: 20px;
+    font-weight: 400;
 }
 .feedback img{
     width: 50%;
@@ -336,6 +462,11 @@ body{
 }
 .footer{
     width: 100%;
+    height: 60vh;
+    background-image: url('./Dev/Cityscape_Footer.png');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 700px 200px;
     background-color: #242423;
     padding: 70px 100px;
     display: flex;
